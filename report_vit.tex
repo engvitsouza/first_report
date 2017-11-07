@@ -1,0 +1,114 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lineno,hyperref}
+\usepackage{amssymb}
+\usepackage[inline]{enumitem}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{cite}
+
+\begin{document}
+\title{An evolutionary compression algorithm for LTE  downlink signals }
+\author{\IEEEauthorblockN{Vit\'{o}ria Alencar de Souza}
+\IEEEauthorblockA{Department of electrical engineering
+Federal University of Par\'{a}\\
+Bel\'{e}m - Brazil \\
+Email: vitoria.souza@itec.ufpa.br}
+}
+\IEEEpeerreviewmaketitle
+\maketitle
+
+\begin{abstract}
+  As the communications has improved the human behavior also changed and it is also 
+  creating  new demands and challenges for the next generation of broadband access. The greatest  
+  challenges are provide high connection rates and also  concerns  about environmental  
+issues. The new architecture of access networks CRAN (centralized radio access network) is 
+proposed in order of provide higher data rates and enables the green communications.In CRAN the 
+improvements are  due to its centralization but it also creates some impairments such as limitations 
+in fronthaul capacity. Thus this article aims improve the compression of baseband signals in a 
+fronthaul of CRAN by proposing a new clustering evolutive  method.
+\end{abstract}
+
+
+\section{Introduction}
+   
+   
+  It is projected that the 5G network will be required to deliver data rate about 100 to 1000 
+  times the current 4G technology, utilizing radical increase in wireless bandwidths at very 
+  high frequencies, extreme cellular network densitification, and massive number of 
+  antennas ~\cite{oquesera}.
+
+
+   Traditional base stations (BSs) comprise either a co-located
+   baseband unit (BBU) with a radio unit or a distributed BBU with a remote radio unit  
+   (RRU) connected via fiber. For either case, a separate equipment room with supporting facilities 
+   such as air conditioning  is required in order for BS deployment, rising the operating expense 
+   (OPEX) of the network. Nevertheless since the operating frequency of LTE is    usually higher 
+   than that of 2G and 3G, the coverage of an LTE cell is smaller than that of a 2G or 3G cell. As 
+   a result, more LTE cells are needed to cover the same area, meaning that more equipment rooms 
+   are required and more capital expenditure (CAPEX) is   needed ~\cite{quek2017cloud}.
+ 
+
+   However according of climate change, rising fossil fuel prices and energy security increase,
+   companies and governments around the world are committing great efforts to develop new 
+   technologies for the green strategies addressing climate chance globally and facilitating low 
+   greenhouse gas (GHG)  development ~\cite{yu2012green}.
+   %Currently, the GHG emissions produced by the Information and 
+   %Communication Technology (ICT) industry alone are said to be %equivalent to the GHG emissions 
+   % of 
+   %the entire aviation industry ~\cite{yu2012green}.
+
+    CRAN (centralized radio access network) is new architecture for radio access network who was 
+   proposed for the  next generation of cellular networks, the ``C" could means centralized but 
+   also collaborative or cloud radio access network.
+
+   In this architecture the baseband units (BBU) and the remote radio heads (RRH) are physically 
+   separated, and digitized baseband complex  samples are transported between RRH and BBU 
+    ~\cite{cran_arch}.
+  
+   The  centralization enables many advantages, first the number of equipment rooms 
+   for BS placement is greatly reduced, leading to CAPEX reduction. Furthermore, the facilities, 
+   especially the air conditioning, could be shared by BBUs in the same central office, leading to 
+reduction in a OPEX of the network ~\cite{quek2017cloud}. Then CRAN is also concerned with 
+environmental issues.
+  
+  
+
+
+
+
+\section{Compression principles for LTE signals }
+In a LTE downlink signals there is many redundancies  whose are inserted in order of transmit this 
+signals over a wireless channel whose impose some distortions. Thus LTE signals has 
+some redundancies  in a time and frequency domain that could be removed.
+
+Compression of downlink LTE signals is a process that is performed before fronthaul, it aims
+remove redundancies of a baseband LTE signal. 
+
+
+The fundamental idea of this process  is remove  all the 
+redundancies in a compression module whose is inserted before the fronthaul and so that they can be 
+reinserted after the fronthaul in  a decompression module. Then  the fronthaul capacity is improved.
+
+
+Compression  process  and the proposed improvements are described in the next sections.
+
+\subsection{Remove time redundancies}
+\subsection{Remove frequency  redundancies}
+
+\subsection{Clustering samples }
+
+
+
+\section{Proposed method}
+
+
+\bibliographystyle{./IEEEtran}
+\bibliography{./IEEEabrv,./telecom.bib,./dsp.bib}
+\end{document}
